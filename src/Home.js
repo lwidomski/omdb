@@ -24,11 +24,9 @@ class Home extends React.Component {
     componentDidMount(){
         const queryString = require('query-string');
 
-        console.log(window.location);
 
         // searching for parameters in the URL:
         const parsed = queryString.parse(window.location.search);
-        console.log(parsed['q']);
 
         if(parsed){
             // search parameter:
@@ -77,8 +75,8 @@ class Home extends React.Component {
         event.preventDefault();
         let url = "http://www.omdbapi.com/?apikey="+this.apikey+"&s="+this.state.search;
         this.fetchFilms(url);
-        if(this.state.search.length > 0){
-            if(this.state.title.length > 0) {
+        if(this.state.search && this.state.search.length > 0){
+            if(this.state.title && this.state.title.length > 0) {
                 history.push('/?q='+this.state.search+'&t='+this.state.title)
             }else{
                 history.push('/?q='+this.state.search)
@@ -111,7 +109,6 @@ class Home extends React.Component {
             try {
                 const res = await fetch(url);
                 const json = await res.json();
-                console.log(json);
 
                 response = json;
                 isLoading = false;
