@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About CAKES
 
-## Available Scripts
+'OMDB Search Engine' is simple application which lists films obtained from OMDB API and lets you browse them.
 
-In the project directory, you can run:
 
-### `npm start`
+## Technologies and methods
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- ReactJS
+- Packaging: NPM build tool with packages.json
+- IDE used: PHPStorm with direct integration into GitHub and server.
+- Source control: GitHub
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+## More in depth
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The website lands you on a list of all cakes that are listed in the database.
+By default you see only their pictures, but on hover action their names are displayed as an overlay over the image.
+You are able to click on any of them to be taken to a page with details about the particular cake. 
 
-### `npm run build`
+On every cake page you get to see the particular cake's name, picture, comment and their yum factor (1-5). You can use the 'back' button here to get back to the home page where all cakes are listed.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+On the home page you are also presented with an option to add a new cake.
+That button will take you to a page where you can specify cake's name, image url, comment and yum factor. Upon successfully saving your entry you will be taken back to the home page.
+. You can use the 'back' button on the 'add a new cake' page to get back to the home page where all cakes are listed.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Live demo
 
-### `npm run eject`
+- **[Lukasw.co.uk - OMDB](http://www.omdb.lukasw.co.uk)**
+// currently unavailable due to outdated installed PHP version on my server.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Disclosure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Some very light styling has been used on the page.
